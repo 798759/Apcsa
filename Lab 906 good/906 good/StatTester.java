@@ -12,6 +12,7 @@ import java.util.Arrays;
 public class StatTester{
     //  Instance variables
     int nums[];
+    int first = 0;
 
     // Constructor
     public StatTester(){
@@ -37,20 +38,27 @@ public class StatTester{
         for(int i=0; i<nums.length; i++){
             sum = sum + nums[i];
         }
-        System.out.println(sum);
+        System.out.println("sum="+sum);
     }
 
     public void getMean(){
         double mean = 0;
+        int sum =0;
         for (int i=0; i<nums.length; i++){
-            mean = mean + nums[i];
-            mean = mean / 100;
-        }
-        System.out.println(mean);
+        mean= sum + nums[i];
+        mean = mean/100;
+        
+    }
+    System.out.println("mean="+mean);
+    //public double getMedian(){
+        //arrayList.sort();
     }
     
-    public double getMedian(){
-        //arrayList.sort();
+    public void getMedian(){
+        
+        java.util.Arrays.sort(nums);
+        first =nums[49];
+        System.out.println("Median=" +first);
     }
 }
 

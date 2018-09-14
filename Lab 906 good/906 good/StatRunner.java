@@ -15,5 +15,6 @@ public class StatRunner{
         st.printArray();
         st.getSum();
         st.getMean();
+        st.getMedian();
     }
 }
